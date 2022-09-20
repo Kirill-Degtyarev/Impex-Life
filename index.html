@@ -163,11 +163,11 @@
                         </div>
                         <div class="nav-bar__search search">
                             <div class="search__icon">
-                                <img src="./img/logo-search.svg" alt="logo" srcset="">
+                                <img src="./img/logo-search.svg" alt="logo">
                             </div>
                             <div class="search__input">
                                 <div class="search__input-icon">
-                                    <img src="./img/icons/search.svg" alt="search" srcset="">
+                                    <img src="./img/icons/search.svg" alt="search">
                                 </div>
                                 <div class="search__input-input">
                                     <input type="text" name="search" id="search"
@@ -235,11 +235,11 @@
                             Мы перезвоним вам в течение 10 минут или в другое удобное время
                         </div>
                         <div class="modal-content__work">Мы работаем Пн — Пт, с 9:00 до 18:00</div>
-                        <form class="modal-content__form modal-form" method="#" action="#">
+                        <form class="modal-content__form modal-form">
                             <input type="text" name="username" id="userNameForm" placeholder="Как к вам обращаться?"
-                                oninput="checkName(this)" required="true">
+                                oninput="checkName(this)" required>
                             <input type="tel" name="phone" class="tel" id="phone" placeholder="Телефон для связи"
-                                required="true">
+                                required>
                             <div class="modal-form__call form-call">
                                 <div class="form-call__title">Когда вам позвонить?</div>
                                 <div class="form-call__buttons">
@@ -494,7 +494,7 @@
                                 данном
                                 Сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.<br>
                                 9.3. Все предложения или вопросы по настоящей Политике конфиденциальности следует
-                                сообщать по адресу электронной почты <a href="mailto: info@mail.ru">
+                                сообщать по адресу электронной почты <a href="mailto:info@mail.ru">
                                     info@mail.ru</a><br>
                                 9.4. Действующая Политика конфиденциальности размещена на странице по адресу:
                                 <a href="http://adres.ru">adres.ru</a><br>
@@ -771,7 +771,7 @@
                     <div class="mobile-search search" onclick="closeMobileSearch(event)">
                         <div class="mobile-search__input">
                             <div class="mobile-search__input-icon">
-                                <img src="./img/icons/search.svg" alt="search" srcset="">
+                                <img src="./img/icons/search.svg" alt="search">
                             </div>
                             <div class="mobile-search__input-input">
                                 <input type="text" name="search" id="search"
@@ -829,7 +829,7 @@
                                 сообщества</div>
                             <div class="equipment-bottom__btn">
                                 <div class="equipment-bottom__btn-img">
-                                    <img src="./img/page-equipment/tomograph.png" alt="tomograph" srcset="">
+                                    <img src="./img/page-equipment/tomograph.png" alt="tomograph">
                                 </div>
                                 <div class="equipment-bottom__btn-links" onclick="openModal()">Бесплатная апробация <br>
                                     медицинского
@@ -2101,97 +2101,124 @@
                                     <li class="list-menu-item">
                                         <a href="#moscow">Москва</a> <span class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                        <li class="dop-list__item">НИИ НХ Бурденко</li>
-                                        <li class="dop-list__item">НИИ Склифосовского</li>
-                                        <li class="dop-list__item">Морозовская ДГКБ</li>
-                                        <li class="dop-list__item">ДГКБ № 13 имени Н. Ф. Филатова </li>
-                                        <li class="dop-list__item">Первый МГМУ имени И. М. Сеченова</li>
-                                        <li class="dop-list__item">ГБ 13 </li>
-                                        <li class="dop-list__item">ГБ 67</li>
-                                    </ul>
+
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                            <li class="dop-list__item">НИИ НХ Бурденко</li>
+                                            <li class="dop-list__item">НИИ Склифосовского</li>
+                                            <li class="dop-list__item">Морозовская ДГКБ</li>
+                                            <li class="dop-list__item">ДГКБ № 13 имени Н. Ф. Филатова </li>
+                                            <li class="dop-list__item">Первый МГМУ имени И. М. Сеченова</li>
+                                            <li class="dop-list__item">ГБ 13 </li>
+                                            <li class="dop-list__item">ГБ 67</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#saint-p">Санкт-Петербург</a><span
                                             class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                        <li class="dop-list__item">НИИ НХ Бурденко</li>
-                                        <li class="dop-list__item">НИИ Склифосовского</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                            <li class="dop-list__item">НИИ НХ Бурденко</li>
+                                            <li class="dop-list__item">НИИ Склифосовского</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#astana">Астана</a> <span class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#barnaul">Баранаул</a> <span class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#vidnoe">Видное</a> <span class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#vladivostok">Владивосток</a> <span
                                             class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#ivanovo">Иваново</a> <span class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#irkutsk">Иркутск</a> <span class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#kurgan">Курган</a> <span class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#moscow">Московская область</a> <span
                                             class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#nizhny-n">Нижний Новгород</a> <span
                                             class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#novosibirsk">Новосибирск</a> <span
                                             class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                        <li class="dop-list__item">НИИ НХ Бурденко</li>
-                                        <li class="dop-list__item">НИИ Склифосовского</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                            <li class="dop-list__item">НИИ НХ Бурденко</li>
+                                            <li class="dop-list__item">НИИ Склифосовского</li>
+                                        </ul>
+                                    </li>
                                     <li class="list-menu-item">
                                         <a href="#khabarovsk">Хабаровск</a> <span class="list-menu-item__count"></span>
                                     </li>
-                                    <ul class="dop-list">
-                                        <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
-                                    </ul>
+                                    <li class="dop-list">
+                                        <ul>
+                                            <li class="dop-list__item">ГКБ № 1 имени Н.И. Пирогова</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -2208,8 +2235,7 @@
                         </div>
                         <div class="form-body__content body-content">
                             <div class="body-content__wr">
-                                <div class="body-content__avatar"><img src="./img/page-form/avatar.png" alt=""
-                                        srcset="">
+                                <div class="body-content__avatar"><img src="./img/page-form/avatar.png" alt="avatar">
                                 </div>
                                 <div class="body-content__title"><span>Оставьте свой номер телефона,</span> <br> и мы
                                     свяжемся с
@@ -2368,11 +2394,11 @@
                         <div class="footer__nav-bar">
                             <div class="footer__nav-bar-search search">
                                 <div class="footer-search__icon">
-                                    <img src="./img/logo-search.svg" alt="logo" srcset="">
+                                    <img src="./img/logo-search.svg" alt="logo">
                                 </div>
                                 <div class="footer-search__input">
                                     <div class="footer-search__input-icon">
-                                        <img src="./img/icons/search.svg" alt="search" srcset="">
+                                        <img src="./img/icons/search.svg" alt="search">
                                     </div>
                                     <div class="footer-search__input-input">
                                         <input type="text" name="search" id="search"
@@ -2566,7 +2592,7 @@
                 <div class="footer-mobile__body">
                     <div class="footer-mobile__header">
                         <div class="footer-mobile__header-icon">
-                            <img src="./img/logo.svg" alt="" srcset="">
+                            <img src="./img/logo.svg" alt="logo">
                             <div class="mobile-icon__subtitle">Работаем в сфере здравоохранения.Наука и образование,
                                 лечение, поставка медицинского оборудования</div>
                         </div>
@@ -2590,11 +2616,11 @@
                     <div class="footer__nav-bar">
                         <div class="footer__nav-bar-search search">
                             <div class="footer-search__icon">
-                                <img src="./img/logo-search.svg" alt="logo" srcset="">
+                                <img src="./img/logo-search.svg" alt="logo">
                             </div>
                             <div class="footer-search__input">
                                 <div class="footer-search__input-icon">
-                                    <img src="./img/icons/search.svg" alt="search" srcset="">
+                                    <img src="./img/icons/search.svg" alt="search">
                                 </div>
                                 <div class="footer-search__input-input">
                                     <input type="text" name="search" id="search"
