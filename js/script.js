@@ -301,7 +301,7 @@ const linksMap = document.querySelectorAll(".map a");
 const menuItem = document.querySelectorAll(".list-menu-item");
 
 menuItem.forEach((el, index, array) => {
-    const dopListLength = array[index].nextElementSibling.childElementCount;
+    const dopListLength = array[index].nextElementSibling.childNodes[1].childElementCount;
 
     array[0].classList.add("active-item");
     array[0].nextElementSibling.style.display = "flex";
