@@ -14,7 +14,9 @@ function onShowSelect(e) {
 function setLang(e) {
     let selectedLang = e.target.dataset.lang;
     let selectTitle = document.querySelector(".select__title");
-    selectTitle.firstElementChild.innerText.toLowerCase() !== selectedLang ? (selectTitle.firstElementChild.innerText = selectedLang) : selectTitle.firstElementChild.innerText;
+    selectTitle.firstElementChild.innerText.toLowerCase() !== selectedLang
+        ? (selectTitle.firstElementChild.innerText = selectedLang)
+        : selectTitle.firstElementChild.innerText;
 }
 
 function onShowSelectMobile(e) {
@@ -60,7 +62,9 @@ function closeMobileSearch(e) {
 function setLangMobile(e) {
     let selectedLang = e.target.dataset.lang;
     let selectTitle = document.querySelector(".select__title-mobile");
-    selectTitle.firstElementChild.innerText.toLowerCase() !== selectedLang ? (selectTitle.firstElementChild.innerText = selectedLang) : selectTitle.firstElementChild.innerText;
+    selectTitle.firstElementChild.innerText.toLowerCase() !== selectedLang
+        ? (selectTitle.firstElementChild.innerText = selectedLang)
+        : selectTitle.firstElementChild.innerText;
 }
 
 document.addEventListener("keydown", (e) => {
@@ -152,14 +156,18 @@ function openSearch(e) {
     if (navBar.style.display == "flex" || navBar.style.display == "") {
         navBar.style.display = "none";
         navSearch.style.display = "flex";
-        document.querySelector(".action-item__search").innerHTML = `<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        document.querySelector(
+            ".action-item__search"
+        ).innerHTML = `<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M14.547 1.70711C14.9375 1.31658 14.9375 0.683417 14.547 0.292893C14.1564 -0.0976311 13.5233 -0.0976311 13.1327 0.292893L7.83984 5.58579L2.54695 0.292893C2.15643 -0.0976311 1.52326 -0.0976311 1.13274 0.292893C0.742213 0.683417 0.742213 1.31658 1.13274 1.70711L6.42563 7L1.13274 12.2929C0.742213 12.6834 0.742213 13.3166 1.13274 13.7071C1.52326 14.0976 2.15643 14.0976 2.54695 13.7071L7.83984 8.41421L13.1327 13.7071C13.5233 14.0976 14.1564 14.0976 14.547 13.7071C14.9375 13.3166 14.9375 12.6834 14.547 12.2929L9.25406 7L14.547 1.70711Z" fill="#0A0A0A"/>
         </svg>
         `;
     } else {
         navBar.style.display = "flex";
         navSearch.style.display = "none";
-        document.querySelector(".action-item__search").innerHTML = `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        document.querySelector(
+            ".action-item__search"
+        ).innerHTML = `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33317 12.6667C3.33317 7.51209 7.51185 3.33341 12.6665 3.33341C17.8212 3.33341 21.9998 7.51209 21.9998 12.6667C21.9998 15.1819 21.005 17.4646 19.3873 19.143C19.3423 19.1778 19.2989 19.2158 19.2575 19.2571C19.2162 19.2985 19.1781 19.3419 19.1433 19.387C17.4649 21.005 15.1819 22.0001 12.6665 22.0001C7.51185 22.0001 3.33317 17.8214 3.33317 12.6667ZM20.1571 22.0423C18.1042 23.6847 15.5 24.6667 12.6665 24.6667C6.03909 24.6667 0.666504 19.2942 0.666504 12.6667C0.666504 6.03933 6.03909 0.666748 12.6665 0.666748C19.2939 0.666748 24.6665 6.03933 24.6665 12.6667C24.6665 15.4999 23.6847 18.1038 22.0427 20.1566L26.9432 25.0571C27.4639 25.5778 27.4639 26.4221 26.9432 26.9428C26.4225 27.4635 25.5782 27.4635 25.0575 26.9428L20.1571 22.0423Z" fill="#0A0A0A"/>
         </svg>`;
     }
@@ -289,7 +297,9 @@ function showSlides(n) {
 
     for (i = 0; i < slides.length; i++) {
         if (slides[i].style.display == "block") {
-            document.querySelector(".sliders-body__title").innerHTML = `${slides[i].childNodes[1].dataset.desc}`;
+            document.querySelector(
+                ".sliders-body__title"
+            ).innerHTML = `${slides[i].childNodes[1].dataset.desc}`;
         }
     }
 }
@@ -302,7 +312,6 @@ const menuItem = document.querySelectorAll(".list-menu-item");
 
 menuItem.forEach((el, index, array) => {
     const dopListLength = array[index].nextElementSibling.childNodes[1].childElementCount;
-
     array[0].classList.add("active-item");
     array[0].nextElementSibling.style.display = "flex";
     array[index].lastElementChild.innerText = dopListLength;
@@ -343,7 +352,10 @@ linksForMap.forEach((el) => {
             });
             currentElement.childNodes[1].setAttribute("r", 60);
             currentElement.childNodes[1].setAttribute("opacity", 0.9);
-            currentElement.insertAdjacentHTML("afterend", `<circle cx="${cxCoord}" cy="${cyCoord}" r="5" fill="white"/>`);
+            currentElement.insertAdjacentHTML(
+                "afterend",
+                `<circle cx="${cxCoord}" cy="${cyCoord}" r="5" fill="white"/>`
+            );
         }
     });
 });
@@ -384,7 +396,8 @@ window.addEventListener("DOMContentLoaded", function () {
                 })
                 .replace(/[+()]/g, "\\$&");
             reg = new RegExp("^" + reg + "$");
-            if (!reg.test(this.value) || this.value.length < 5 || (keyCode > 47 && keyCode < 58)) this.value = new_value;
+            if (!reg.test(this.value) || this.value.length < 5 || (keyCode > 47 && keyCode < 58))
+                this.value = new_value;
             if (keyCode > 47 && keyCode < 58) {
                 input.classList.remove("error");
             } else {
